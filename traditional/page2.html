@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Traditional multipage app</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+  <h1>Page 2</h1>
+  <a href="./page1.html">Go back to page 1</a>
+  <br />
+  <pre id="history"></pre>
+    <script>
+      function printHistory() {
+        let values = {};
+        for (const property in window.history) {
+          if (typeof window.history[property] === 'function') {
+            values[property] = 'native function()';
+          } else {
+            values[property] = window.history[property];
+          }
+        }
+        return values;
+      }
+
+      let element = document.getElementById('history');
+      element.innerText = JSON.stringify(printHistory(), null, '\t');
+    </script>
+  <script>
+    window.addEventListener('beforeunload', (event) => {
+      // Cancel the event as stated by the standard.
+      event.preventDefault();
+      // Chrome requires returnValue to be set.
+      event.returnValue = '';
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "popup-on-leaving-page-demo",
+  "version": "1.0.0",
+  "main": "./server.js",
+  "repository": "git@github.com:heyjiawei/popup-on-leaving-page-demo.git",
+  "author": "heyjiawei <jaewei.j.w@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "node ./server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
