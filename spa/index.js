@@ -14,6 +14,8 @@ function createPage(currentPage, nextPage) {
     <h1>Page ${currentPage}</h1>
     <a href="#" id="navigate">Go to page ${nextPage}</a>
     <br />
+    <a href="https://google.com">Leave SPA</a>
+    <br />
     <pre id="history"></pre>
   `;
 }
