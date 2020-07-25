@@ -3,9 +3,9 @@ const express = require("express");
 const app = express();
 const port = 3002;
 
-app.use(express.static(path.join(__dirname, "spa-sessionStorage")));
+app.use(express.static(path.join(__dirname, "spa-historyState")));
 app.use((_req, res) =>
-  res.sendFile(path.join(__dirname, "spa-sessionStorage/index.html"))
+  res.sendFile(path.join(__dirname, "spa-historyState/index.html"))
 );
 
 app.listen(port, () =>

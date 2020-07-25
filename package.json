@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "yarn webpack --config sessionStorage.config.js ",
-    "start-server": "node ./spa-sessionStorage.js"
+    "dev:historyState": "yarn webpack --config historyState.config.js ",
+    "start-server:historyState": "node ./spa-historyState.js"
   },
   "dependencies": {
     "express": "^4.17.1"

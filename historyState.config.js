@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./spa-sessionStorage/index.js",
+  entry: "./spa-historyState/index.js",
   output: {
-    path: path.resolve(__dirname, "spa-sessionStorage"),
+    path: path.resolve(__dirname, "spa-historyState"),
     filename: "bundle.js",
   },
   watch: true,
