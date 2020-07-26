@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "dev:historyState": "yarn webpack --config historyState.config.js ",
-    "start-server:historyState": "node ./spa-historyState.js"
+    "start-server:historyState": "node ./spa-historyState.js",
+    "dev:checkExample": "yarn webpack --config checkExample.config.js ",
+    "start-server:checkExample": "node ./spa-checkExample.js"
   },
   "dependencies": {
     "express": "^4.17.1"
