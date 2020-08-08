@@ -100,7 +100,7 @@ function createBrowserHistory(options = {}) {
                 go(delta * -1);
               },
             };
-
+            console.log({ delta });
             go(delta);
           }
         } else {
