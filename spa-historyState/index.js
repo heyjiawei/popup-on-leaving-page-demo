@@ -1,4 +1,5 @@
 function promptBeforeUnload(event) {
+  console.log("promptBeforeUnload ran");
   // Cancel the event.
   event.preventDefault();
   // Chrome (and legacy IE) requires returnValue to be set.

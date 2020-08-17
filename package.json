@@ -11,12 +11,15 @@
     "start-server:historyState": "node ./spa-historyState.js",
     "dev:checkExample": "yarn webpack --config checkExample.config.js ",
     "start-server:checkExample": "node ./spa-checkExample.js",
-    "dev:traditional": "node ./traditional-server.js"
+    "dev:traditional": "node ./traditional-server.js",
+    "start-dev": "concurrently npm:dev:traditional npm:dev:checkExample npm:start-server:checkExample npm:dev:historyState npm:start-server:historyState",
+    "start": "concurrently npm:dev:traditional npm:start-server:checkExample  npm:start-server:historyState"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   }
